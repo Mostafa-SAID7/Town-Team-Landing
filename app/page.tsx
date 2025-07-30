@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Star, ShoppingBag, Users, MapPin, Clock, ArrowRight, Zap, Heart } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -54,7 +53,13 @@ export default function TownTeamLanding() {
             </div>
             <Button className="bg-charcoal text-white hover:bg-brick-red transform hover:rotate-1 hover:scale-110 transition-all duration-500 font-almarai shadow-xl hover:shadow-2xl hover:shadow-brick-red/50 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-              <ShoppingBag className="w-4 h-4 mr-2 group-hover:animate-bounce relative z-10" />
+              <lord-icon
+                src="https://cdn.lordicon.com/pbrgppbb.json"
+                trigger="hover"
+                colors="primary:#ffffff,secondary:#b22222"
+                style={{ width: "20px", height: "20px", marginRight: "8px" }}
+                className="relative z-10"
+              ></lord-icon>
               <span className="relative z-10">السلة | CART</span>
             </Button>
           </div>
@@ -66,13 +71,27 @@ export default function TownTeamLanding() {
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-charcoal/5 to-transparent"></div>
         </div>
+        {/* CSS-based animated shapes instead of Lottie */}
+        <div className="absolute top-10 right-10 w-32 h-32 opacity-20">
+          <div className="w-full h-full border-4 border-brick-red rounded-full animate-spin-slow"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-denim-blue rounded-full animate-pulse"></div>
+        </div>
+        <div className="absolute top-20 left-20 w-24 h-24 opacity-25">
+          <div className="w-full h-full bg-gradient-to-r from-brick-red to-denim-blue transform rotate-45 animate-bounce-subtle"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in-up">
               <div className="space-y-4">
                 <Badge className="bg-gradient-to-r from-brick-red to-denim-blue text-white font-bold px-6 py-3 transform -rotate-1 font-almarai shadow-2xl hover:shadow-3xl hover:shadow-brick-red/50 hover:scale-110 transition-all duration-500 relative overflow-hidden group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  <Zap className="w-4 h-4 mr-2 group-hover:animate-spin relative z-10" />
+                  <lord-icon
+                    src="https://cdn.lordicon.com/xjovhxra.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#1e3f66"
+                    style={{ width: "20px", height: "20px", marginRight: "8px" }}
+                    className="relative z-10"
+                  ></lord-icon>
                   <span className="relative z-10">كولكشن جديد | NEW COLLECTION</span>
                 </Badge>
                 <h1 className="text-5xl md:text-7xl font-black text-charcoal leading-tight transform -rotate-1 font-almarai drop-shadow-2xl hover:drop-shadow-3xl transition-all duration-700 animate-slide-in-left hover:scale-105 cursor-default">
@@ -103,7 +122,13 @@ export default function TownTeamLanding() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                   <span className="relative z-10">اكتشف الإطلالة | DISCOVER THE LOOK</span>
-                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 group-hover:scale-125 transition-all duration-300 relative z-10" />
+                  <lord-icon
+                    src="https://cdn.lordicon.com/zmkotitn.json"
+                    trigger="hover"
+                    colors="primary:#ffffff,secondary:#b22222"
+                    style={{ width: "20px", height: "20px", marginLeft: "8px" }}
+                    className="relative z-10"
+                  ></lord-icon>
                 </Button>
                 <Button
                   variant="outline"
@@ -111,6 +136,13 @@ export default function TownTeamLanding() {
                   className="border-2 border-charcoal text-charcoal hover:bg-gradient-to-r hover:from-charcoal hover:to-denim-blue hover:text-white transform hover:-rotate-1 hover:scale-110 transition-all duration-500 font-bold text-lg px-8 py-4 bg-white/90 backdrop-blur-sm font-almarai shadow-xl hover:shadow-2xl hover:shadow-charcoal/50 group relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-charcoal/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  <lord-icon
+                    src="https://cdn.lordicon.com/wloilxuq.json"
+                    trigger="hover"
+                    colors="primary:#1a1a1a,secondary:#b22222"
+                    style={{ width: "20px", height: "20px", marginRight: "8px" }}
+                    className="relative z-10"
+                  ></lord-icon>
                   <span className="relative z-10">شاهد القصة | WATCH STORY</span>
                 </Button>
               </div>
@@ -129,16 +161,23 @@ export default function TownTeamLanding() {
             </div>
           </div>
         </div>
-        {/* Enhanced Decorative elements */}
-        <div className="absolute top-10 right-10 w-20 h-20 border-4 border-brick-red rounded-full transform rotate-12 opacity-30 animate-spin-slow shadow-2xl hover:shadow-3xl hover:shadow-brick-red/50 hover:scale-125 transition-all duration-500"></div>
+        {/* Enhanced Decorative elements with CSS animations */}
         <div className="absolute bottom-20 left-10 w-16 h-16 bg-gradient-to-br from-sand-beige to-concrete-gray transform -rotate-12 opacity-50 animate-bounce-subtle shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-500"></div>
         <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-gradient-to-r from-denim-blue to-brick-red rounded-full opacity-20 animate-float shadow-lg"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-12 h-12 border-2 border-charcoal transform rotate-45 opacity-20 hover:opacity-40 hover:rotate-90 hover:scale-125 transition-all duration-700 shadow-lg"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-12 h-12 border-2 border-charcoal transform rotate-45 opacity-20 hover:opacity-40 hover:rotate-90 hover:scale-125 transition-all duration-700 shadow-lg animate-pulse"></div>
       </section>
 
       {/* Featured Outfits */}
       <section className="py-20 bg-gradient-to-b from-white via-concrete-gray/5 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sand-beige/10 to-transparent"></div>
+        {/* CSS animated background elements */}
+        <div className="absolute top-20 right-20 w-20 h-20 opacity-10">
+          <div className="w-full h-full border-2 border-denim-blue rounded-full animate-spin-slow"></div>
+          <div
+            className="absolute top-2 left-2 w-16 h-16 border-2 border-brick-red rounded-full animate-spin-slow"
+            style={{ animationDirection: "reverse" }}
+          ></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-4 transform -rotate-1 font-almarai drop-shadow-2xl hover:drop-shadow-3xl hover:scale-105 transition-all duration-500 cursor-default">
@@ -204,7 +243,13 @@ export default function TownTeamLanding() {
                       {item.category} | {item.categoryEn}
                     </Badge>
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
-                      <Heart className="w-6 h-6 text-brick-red hover:fill-brick-red hover:scale-125 transition-all duration-300 cursor-pointer drop-shadow-lg" />
+                      <lord-icon
+                        src="https://cdn.lordicon.com/ulnswmkk.json"
+                        trigger="hover"
+                        colors="primary:#b22222,secondary:#1e3f66"
+                        style={{ width: "24px", height: "24px" }}
+                        className="cursor-pointer"
+                      ></lord-icon>
                     </div>
                   </div>
                   <div className="p-6 text-center">
@@ -222,7 +267,13 @@ export default function TownTeamLanding() {
                     </p>
                     <Button className="w-full bg-gradient-to-r from-charcoal to-denim-blue text-white hover:from-brick-red hover:to-charcoal transform hover:rotate-1 hover:scale-105 transition-all duration-500 font-bold font-almarai shadow-xl hover:shadow-2xl hover:shadow-brick-red/50 group/btn relative overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000"></div>
-                      <ShoppingBag className="w-4 h-4 mr-2 group-hover/btn:animate-bounce relative z-10" />
+                      <lord-icon
+                        src="https://cdn.lordicon.com/pbrgppbb.json"
+                        trigger="hover"
+                        colors="primary:#ffffff,secondary:#b22222"
+                        style={{ width: "16px", height: "16px", marginRight: "8px" }}
+                        className="relative z-10"
+                      ></lord-icon>
                       <span className="relative z-10">أضف للسلة | ADD TO CART</span>
                     </Button>
                   </div>
@@ -237,6 +288,11 @@ export default function TownTeamLanding() {
       <section className="py-20 bg-gradient-to-br from-sand-beige via-concrete-gray/20 to-sand-beige relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-charcoal/10 to-transparent"></div>
+        </div>
+        {/* CSS animated background elements */}
+        <div className="absolute bottom-10 left-10 w-28 h-28 opacity-15">
+          <div className="w-full h-full bg-gradient-to-r from-brick-red to-denim-blue rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-2 border-charcoal rounded-full animate-spin-slow"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -268,21 +324,21 @@ export default function TownTeamLanding() {
               <div className="space-y-6">
                 {[
                   {
-                    icon: MapPin,
+                    iconSrc: "https://cdn.lordicon.com/surcxhka.json",
                     color: "from-brick-red to-denim-blue",
                     title: "مولود في القاهرة | BORN IN CAIRO",
                     description: "من شوارع عاصمة مصر المزدحمة، نحن نفهم الأسلوب الحضري.",
                     descriptionEn: "From the bustling streets of Egypt's capital, we understand urban style.",
                   },
                   {
-                    icon: Users,
+                    iconSrc: "https://cdn.lordicon.com/dxjqoygy.json",
                     color: "from-denim-blue to-charcoal",
                     title: "للرجل العصري | FOR THE MODERN MAN",
                     description: "مصمم للرجال الذين لا يخافون من التميز وإبداء رأيهم.",
                     descriptionEn: "Designed for men who aren't afraid to stand out and make a statement.",
                   },
                   {
-                    icon: Clock,
+                    iconSrc: "https://cdn.lordicon.com/abfverha.json",
                     color: "from-charcoal to-brick-red",
                     title: "أناقة خالدة | TIMELESS EDGE",
                     description: "قطع كلاسيكية بلمسة عصرية لا تخرج من الموضة أبداً.",
@@ -297,7 +353,12 @@ export default function TownTeamLanding() {
                     <div
                       className={`w-12 h-12 bg-gradient-to-r ${item.color} rounded-full flex items-center justify-center transform rotate-12 group-hover:rotate-0 group-hover:scale-125 transition-all duration-500 shadow-xl group-hover:shadow-2xl`}
                     >
-                      <item.icon className="w-5 h-5 text-white group-hover:animate-pulse" />
+                      <lord-icon
+                        src={item.iconSrc}
+                        trigger="hover"
+                        colors="primary:#ffffff,secondary:#ffffff"
+                        style={{ width: "20px", height: "20px" }}
+                      ></lord-icon>
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-charcoal mb-2 font-almarai group-hover:text-brick-red transition-colors duration-500 drop-shadow-sm group-hover:drop-shadow-lg">
@@ -322,6 +383,10 @@ export default function TownTeamLanding() {
       {/* Customer Looks */}
       <section className="py-20 bg-gradient-to-b from-white via-concrete-gray/5 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sand-beige/10 to-transparent"></div>
+        {/* CSS animated decorative elements */}
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 opacity-10">
+          <div className="w-full h-full bg-gradient-to-r from-denim-blue to-brick-red transform rotate-45 animate-bounce-subtle"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-4 transform rotate-1 font-almarai drop-shadow-2xl hover:drop-shadow-3xl hover:scale-105 transition-all duration-500 cursor-default">
@@ -396,11 +461,17 @@ export default function TownTeamLanding() {
                     <div className="absolute -bottom-2 -right-2 bg-white p-2 border-2 border-charcoal transform rotate-12 group-hover:rotate-6 group-hover:scale-125 transition-all duration-500 shadow-xl hover:shadow-2xl">
                       <div className="flex">
                         {[...Array(customer.rating)].map((_, i) => (
-                          <Star
+                          <lord-icon
                             key={i}
-                            className="w-4 h-4 fill-brick-red text-brick-red hover:scale-125 transition-transform duration-300"
-                            style={{ animationDelay: `${i * 100}ms` }}
-                          />
+                            src="https://cdn.lordicon.com/xyboiuok.json"
+                            trigger="hover"
+                            colors="primary:#b22222,secondary:#1e3f66"
+                            style={{
+                              width: "16px",
+                              height: "16px",
+                              animationDelay: `${i * 100}ms`,
+                            }}
+                          ></lord-icon>
                         ))}
                       </div>
                     </div>
@@ -437,6 +508,14 @@ export default function TownTeamLanding() {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-brick-red/20 via-transparent to-brick-red/20"></div>
+        {/* CSS animated background elements */}
+        <div className="absolute top-20 right-20 w-32 h-32 opacity-20">
+          <div className="w-full h-full border-4 border-white/30 rounded-full animate-spin-slow"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-brick-red/30 rounded-full animate-pulse"></div>
+        </div>
+        <div className="absolute bottom-20 left-20 w-24 h-24 opacity-15">
+          <div className="w-full h-full bg-gradient-to-r from-white/20 to-brick-red/20 transform rotate-45 animate-bounce-subtle"></div>
+        </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-8 animate-fade-in-up">
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 transform -rotate-1 font-almarai drop-shadow-2xl hover:drop-shadow-3xl transition-all duration-700 hover:scale-105 cursor-default">
@@ -465,9 +544,21 @@ export default function TownTeamLanding() {
                 className="bg-gradient-to-r from-brick-red to-denim-blue text-white hover:from-white hover:to-concrete-gray hover:text-charcoal transform hover:rotate-1 hover:scale-125 transition-all duration-500 font-bold text-lg px-8 py-4 font-almarai shadow-2xl hover:shadow-3xl hover:shadow-white/50 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                <Zap className="w-5 h-5 mr-2 group-hover:animate-spin relative z-10" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/xjovhxra.json"
+                  trigger="hover"
+                  colors="primary:#ffffff,secondary:#1e3f66"
+                  style={{ width: "20px", height: "20px", marginRight: "8px" }}
+                  className="relative z-10"
+                ></lord-icon>
                 <span className="relative z-10">تسوق الآن | SHOP NOW</span>
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 group-hover:scale-125 transition-all duration-300 relative z-10" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/zmkotitn.json"
+                  trigger="hover"
+                  colors="primary:#ffffff,secondary:#b22222"
+                  style={{ width: "20px", height: "20px", marginLeft: "8px" }}
+                  className="relative z-10"
+                ></lord-icon>
               </Button>
               <Button
                 variant="outline"
@@ -475,17 +566,18 @@ export default function TownTeamLanding() {
                 className="border-2 border-white text-white hover:bg-gradient-to-r hover:from-white hover:to-concrete-gray hover:text-charcoal transform hover:-rotate-1 hover:scale-125 transition-all duration-500 font-bold text-lg px-8 py-4 bg-transparent backdrop-blur-sm font-almarai shadow-2xl hover:shadow-3xl hover:shadow-white/50 group relative overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                <Heart className="w-5 h-5 mr-2 group-hover:fill-current group-hover:animate-pulse relative z-10" />
+                <lord-icon
+                  src="https://cdn.lordicon.com/ulnswmkk.json"
+                  trigger="hover"
+                  colors="primary:#ffffff,secondary:#b22222"
+                  style={{ width: "20px", height: "20px", marginRight: "8px" }}
+                  className="relative z-10"
+                ></lord-icon>
                 <span className="relative z-10">تابعنا | FOLLOW US</span>
               </Button>
             </div>
           </div>
         </div>
-        {/* Enhanced Floating elements */}
-        <div className="absolute top-20 left-20 w-16 h-16 border-2 border-white/30 rounded-full animate-float shadow-2xl hover:shadow-3xl hover:scale-125 transition-all duration-500"></div>
-        <div className="absolute bottom-20 right-20 w-12 h-12 bg-gradient-to-r from-brick-red/30 to-denim-blue/30 transform rotate-45 animate-spin-slow shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-500"></div>
-        <div className="absolute top-1/2 right-1/4 w-8 h-8 bg-white/20 rounded-full animate-bounce-subtle shadow-lg hover:shadow-xl hover:scale-125 transition-all duration-500"></div>
-        <div className="absolute top-1/4 left-1/3 w-6 h-6 bg-gradient-to-r from-white/20 to-brick-red/20 rounded-full animate-pulse shadow-md"></div>
       </section>
 
       {/* Footer */}

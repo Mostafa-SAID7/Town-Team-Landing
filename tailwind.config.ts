@@ -60,6 +60,10 @@ const config: Config = {
         "denim-blue": "#1E3F66",
         "sand-beige": "#E4D3B2",
       },
+      fontFamily: {
+        almarai: ["Almarai", "Cairo", "sans-serif"],
+        cairo: ["Cairo", "Almarai", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
